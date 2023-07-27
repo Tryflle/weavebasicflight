@@ -28,12 +28,7 @@ public class FlyingMod implements ModInitializer {
         });
     }
     public static void handleFlightLogic(boolean enabled) {
-        if (enabled) {
-            Minecraft.getMinecraft().thePlayer.capabilities.allowFlying = true;
-            Minecraft.getMinecraft().thePlayer.capabilities.isFlying = true;
-        } else {
-            Minecraft.getMinecraft().thePlayer.capabilities.allowFlying = false;
-            Minecraft.getMinecraft().thePlayer.capabilities.isFlying = false;
-        }
+        Minecraft.getMinecraft().thePlayer.capabilities.allowFlying = enabled;
+        Minecraft.getMinecraft().thePlayer.capabilities.isFlying = enabled;
     }
 }
