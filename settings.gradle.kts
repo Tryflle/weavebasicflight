@@ -1,4 +1,4 @@
-rootProject.name = "BasicFlightMod"
+rootProject.name = "WeaveBasicFlight"
 
 pluginManagement {
     repositories {
